@@ -7,11 +7,17 @@ Predicts the survival probability of a passenger.
 Run the following commands
 
 $ virtualenv api -p python3
+
 $ cd api && source bin/activate
+
 $ git clone https://github.com/nandini8/LR_api.git
+
 $ cd LR_api
+
 $ pip install -r requirements.txt
+
 $ python scripts/app.py
+
 
 # Endpoints
 
