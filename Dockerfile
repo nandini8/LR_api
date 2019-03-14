@@ -1,10 +1,7 @@
-FROM jgbustos/ml-model-base:latest
-
-COPY . /app
+FROM python:3.5
+COPY . /app 
 WORKDIR /app
-
-EXPOSE 5000
-
+RUN pip install -r requirements.txt
 ENTRYPOINT ["python3"]
-
+EXPOSE 5000
 CMD ["scripts/app.py"]
