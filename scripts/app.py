@@ -49,4 +49,4 @@ if __name__ == '__main__':
         port = int(sys.argv[1]) # This is for a command-line argument
     except:
         port = 5000
-    app.run(port=port, debug=True, host='0.0.0.0')
+    app.run(port=port, debug=True, host=['0.0.0.0', 'http://3.17.73.168:5000'])
