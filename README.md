@@ -4,8 +4,9 @@ Uses the Titanic dataset from kaggle.com.
 For prediction json is passed in the request.
 Predicts the survival probability of a passenger.
 
-Run the following commands:
+# Run the following commands:
 
+```
 $ virtualenv api -p python3
 
 $ cd api && source bin/activate
@@ -17,13 +18,13 @@ $ cd LR_api
 $ pip install -r requirements.txt
 
 $ python scripts/app.py
-
+```
 
 # Endpoints
-
+```
 For training: /train
 For predicting: /predict
-
+```
 Run training before predicting.
 
 Prediction demo data:
@@ -37,3 +38,13 @@ Prediction demo data:
     {"Age": 21, "Sex": "male", "Embarked": "S"}]
     
 
+# Docker
+```
+docker build -t tag-name .
+docker run -d -p 5000:5000 tag-name
+```
+
+# EC2 setup
+
+1. Create an EC2 instance
+1. 
