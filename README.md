@@ -57,7 +57,6 @@ docker run -d -p 5000:5000 tag-name
     1. ```ssh -i "path/to/xxx.pem" user@public-dns.compute.amazonaws.com```
 1. ```apt-get install docker.io```
 1. ```apt-get update```
-1. ```apt-get install python3-pip```
 1. ```git clone https://github.com/nandini8/LR_api```
 1. ```cd LR_api```
 1. ```docker build -t ml_api .```
