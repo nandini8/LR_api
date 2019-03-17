@@ -45,6 +45,20 @@ docker run -d -p 5000:5000 tag-name
 ```
 
 # EC2 setup
-
 1. Create an EC2 instance
-1. 
+1. To launch an existing EC2 instance. Note down:
+    1. image id ami-xxxxxx
+    1. instance type
+    1. key-name xxx.pem
+    1. security group id sg-xxxxx
+    1. subnet id subnet-xxxxx
+    1. ```aws ec2 run-instances --image-id ami-xxxx --count 1 --instance-type t2.micro --key-name file-name --security-group-ids sg-xxxx --subnet-id subnet-xxxx```
+1. Connect to the instance
+    1. ```ssh -i "path/to/xxx.pem" user@public-dns.compute.amazonaws.com```
+1. ```apt-get install docker.io```
+1. ```apt-get update```
+1. ```apt-get install python3-pip```
+1. ```git clone https://github.com/nandini8/LR_api```
+1. ```cd LR_api```
+1. ```docker build -t ml_api .```
+1. ```docker run -d -p 80:5000 ml_api```
