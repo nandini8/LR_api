@@ -55,8 +55,8 @@ docker run -d -p 5000:5000 tag-name
     1. ```aws ec2 run-instances --image-id ami-xxxx --count 1 --instance-type t2.micro --key-name file-name --security-group-ids sg-xxxx --subnet-id subnet-xxxx```
 1. Connect to the instance
     1. ```ssh -i "path/to/xxx.pem" user@public-dns.compute.amazonaws.com```
-1. ```apt-get install docker.io```
 1. ```apt-get update```
+1. ```apt-get install docker.io``` or ```apt-get install docker```
 1. ```git clone https://github.com/nandini8/LR_api```
 1. ```cd LR_api```
 1. ```docker build -t ml_api .```
