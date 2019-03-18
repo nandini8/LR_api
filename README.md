@@ -61,3 +61,7 @@ docker run -d -p 5000:5000 tag-name
 1. ```cd LR_api```
 1. ```docker build -t ml_api .```
 1. ```docker run -d -p 80:5000 ml_api```
+
+# Future Enhancement
+1. Will make the /train endpoint POST method too so that custom dataset can be passed for training
+1. Can be done for multiple ML models and not restricted to just one.
